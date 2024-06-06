@@ -1,0 +1,16 @@
+<html>
+    <head>
+<script>
+    function Sprawdzwiek() {
+        var wiek = document.getElementById('pole').value;
+        if(wiek >= 18) document.getElementById('wynik').innerHTML='Jesteś pełnoletni';
+        else if(wiek<18)document.getElementById('wynik').innerHTML='Jesteś nie pełnoletni'
+    } 
+</script>
+    </head>
+    <body>
+        <input type="text" id="pole">
+        <input type="button" value="Sprawdz swoj wiek" onclick="Sprawdzwiek()">
+<div id="wynik"></div>
+    </body>
+</html>
